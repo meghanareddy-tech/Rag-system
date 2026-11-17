@@ -1,7 +1,6 @@
 # RAG System — Full Stack Retrieval-Augmented Generation
 
 A full-stack RAG application built with Python FastAPI, Spring Boot, React, and PostgreSQL with pgvector. Users upload PDF or Word documents and ask questions — the system retrieves relevant content and generates cited answers using OpenAI GPT-4.
-
 ---
 
 ## Table of Contents
@@ -715,3 +714,4 @@ CREATE INDEX chunks_embedding_idx
 - Each user can only access their own documents and conversations — enforced at both Spring Boot (ownership check) and Python (SQL filter) layers
 - Never commit `.env` files — they are in `.gitignore`
 - Change `JWT_SECRET` to a strong random value before any public deployment
+This is all about the project
